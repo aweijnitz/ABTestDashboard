@@ -1,7 +1,7 @@
 ABTest Dashboard
 ================
 
-This is a basic UI to see what is going on in the [ABTestServer.js](https://github.com/aweijnitz/ABTestServer.js).
+This is a basic UI to see what is going on in the [ABTestServer.js](https://github.com/aweijnitz/ABTestServer.js). Useful for debugging and inspecting the state.
 It is a webapp written using [Angular.js](https://angularjs.org/).
 
 
@@ -35,6 +35,8 @@ bower install
 Everything is driven by Grunt. 
 Create a dist using ```grunt build```. The final build ends up in the folder ```dist```.
 
+
+![screenshot](https://raw.githubusercontent.com/aweijnitz/ABTestDashboard/master/doc/abtestdashboard.png)
 
 TODO:
 - Make protractor and karma part of dev-dependencies instead of globals
