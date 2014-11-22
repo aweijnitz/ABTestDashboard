@@ -21,7 +21,7 @@ npm install
 bower install
 ```
 
-# Running and testing
+# Development: Running and testing
 - ```grunt serve``` will start a webserver and launch the app in Chrome, then starts watching the files for changes
 - ```grunt test``` runs the unit tests using Karma
 
@@ -34,7 +34,7 @@ bower install
 # Building a distribution
 Everything is driven by Grunt. 
 Create a dist using ```grunt build```. The final build ends up in the folder ```dist```.
-
+Configure the API endpoint in the file [config.js](https://github.com/aweijnitz/ABTestDashboard/blob/master/app/scripts/config.js)
 
 ![screenshot](https://raw.githubusercontent.com/aweijnitz/ABTestDashboard/master/doc/abtestdashboard.png)
 
