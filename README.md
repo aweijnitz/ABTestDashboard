@@ -23,6 +23,9 @@ bower install
 
 # Running and testing
 - ```grunt serve``` will start a webserver and launch the app in Chrome, then starts watching the files for changes
+- ```grunt test``` runs the unit tests using Karma
+
+## Manually running tests
 - ```karma start``` starts the test server for the unit tests
 - ```karma run test/karma.conf.js``` starts the test runner which watches tests for changes and runs them (not needed fo you use *grunt serve*)
 - ```protractor test_e2e/protractor_conf.js``` manually run the end to end tests
@@ -34,5 +37,5 @@ Create a dist using ```grunt build```. The final build ends up in the folder ```
 
 
 TODO:
-Make protractor and karma part of dev-dependencies instead of globals
+- Make protractor and karma part of dev-dependencies instead of globals
 
