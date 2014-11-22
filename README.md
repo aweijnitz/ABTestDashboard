@@ -8,12 +8,12 @@ It is a webapp written using [Angular.js](https://angularjs.org/).
 # Installing
 ## Requirements
 You need to have the following components in order to install, develop, test and build the project
-- Node.js
-- Yeoman (not strictly required, but the project was started using the Yeoman angular scaffolding)
-- Bower
-- Grunt
-- Karma
-- Protractor and webdriver-manager. See the Protractor website
+- [Node.js and npm](http://nodejs.org/)
+- [Yeoman scaffolder](http://yeoman.io/) (not strictly required, but the project was started using the Yeoman angular scaffolding)
+- [Bower frontend package manager](http://bower.io/)
+- [Grunt build tool/task runner](http://gruntjs.com/)
+- [Karma unit testrunner](http://karma-runner.github.io/0.12/index.html)
+- [Protractor end-to-end testrunner for AngularJS](http://angular.github.io/protractor/) and webdriver-manager. See the Protractor website
 
 ## Installing after download
 ```bash
