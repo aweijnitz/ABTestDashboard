@@ -1,0 +1,40 @@
+<div class="row">
+  <div id="details" class="col-sm-7 col-md-12 main">
+    <h2 class="sub-header">Details for <code>{{ testDetails.testID }}</code></h2>
+
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+        <tr>
+          <th width="15%">Variant</th>
+          <th width="20%">Coversions/Views</th>
+          <th width="15%">Change (%)</th>
+          <th>Confidence (%)</th>
+          <th width="15%">Significant?</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>A (Control)</td>
+          <td>{{ testDetails.conversions[0] }} / {{ testDetails.variantViews[0] }}</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>B (Test)</td>
+          <td>{{ testDetails.conversions[1] }} / {{ testDetails.variantViews[1] }}</td>
+          <td>{{ testDetails.stats.changePercent }}</td>
+          <td><div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="{{ (100*testDetails.stats.probabilityOfB).toFixed(2) }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ (100*testDetails.stats.probabilityOfB).toFixed(2) }}%; min-width: 20px;">
+              {{ (100*testDetails.stats.probabilityOfB).toFixed(2) }}%
+            </div>
+          </div></td>
+          <td><span class="glyphicon glyphicon-{{ (tst.stats.isSignificantForB ? 'ok' : 'minus') }}"></span></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+

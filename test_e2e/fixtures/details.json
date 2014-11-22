@@ -1,0 +1,11 @@
+{
+  "testID": "t123456789",
+  "variantViews": [0, 2],
+  "conversions": [0, 1],
+  "stats": {
+    "isSignificant": false,
+    "isSignificantForB": false,
+    "changePercent": 40,
+    "probabilityOfB": 0.3213503964711087
+  }
+}

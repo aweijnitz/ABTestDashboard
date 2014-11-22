@@ -1,0 +1,28 @@
+<div class="row">
+  <div id="recent_list" class="col-sm-10 col-md-12 main">
+    <h2 class="sub-header">Most recent tests</h2>
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th width="25%">#id</th>
+          <th width="15%">Control (conversions/views)</th>
+          <th width="15%">Test (converions/views)</th>
+          <th width="30%">Change relative to control (%)</th>
+          <th width="15%">Significant?</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="tst in recent.tests">
+          <td><a ng-href="#/details/{{ tst.testID }}">{{ tst.testID }}</a></td>
+          <td>{{ tst.conversions[0] }} / {{ tst.variantViews[0] }}</td>
+          <td>{{ tst.conversions[1] }} / {{ tst.variantViews[1] }}</td>
+          <td>{{ tst.stats.changePercent }}</td>
+          <td> <span class="glyphicon glyphicon-{{ (tst.stats.isSignificantForB ? 'ok' : 'minus') }}"></span></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
